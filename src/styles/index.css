@@ -10,3 +10,126 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+ }
+ 
+ body{
+     background-color: black;
+     background-image: url("https://i.gifer.com/6C7u.gif");
+     background-size: cover;
+     background-attachment: fixed;
+ }
+ 
+ .Home{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+ }
+ 
+ .c-player{
+     display: block;
+     width: 420px;
+     height: 700px;
+     background: linear-gradient(
+         180deg,  0%,
+         rgb(0, 0, 0) 100%
+     );
+     padding: 50px;
+     border-radius: 16px;
+    /*  box-shadow: ; */
+ }
+ 
+ .c-player > h4 {
+     color: white;
+     font-size: 24px;
+     text-transform: uppercase;
+     font-weight: 400;
+     text-align: center;
+ }
+ 
+ .c-player > p {
+     color: rgb(247, 255, 141);
+     font-size: 15px;
+     font-weight: 400;
+     text-align: center;
+     position: relative;
+     top:  40px;
+ }
+ 
+ .c-player--details .details-img {
+     position: relative;
+     width: fit-content;
+     margin: 50px auto;
+ }
+ 
+ .c-player--details .details-img img {
+     display: block;
+     margin: 0 auto;
+     width: 100%;
+     max-width: 250px;
+     border-radius: 50px;
+     box-shadow: 10px 10px 10px 10px black;
+ }
+ 
+ .c-player--details .details-title {
+     color: white;
+     font-size: 45px;
+     text-align: center;
+     margin-bottom: 10px;
+ }
+ 
+ .c-player--details .details-artist {
+     color: rgb(247, 255, 141);
+     font-size: 20px;
+     text-align: center;
+     margin-bottom: 20px;
+ }
+ 
+ .c-player--control{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 30px;
+ }
+ 
+ .c-player--control .play-btn{
+     display: flex;
+     margin-bottom: 0 30px;
+     padding: 20px;
+     border-radius: 50%;
+    /*  box-shadow: ; */
+     border: none;
+     outline: none;
+     background-color: rgb(22, 225, 55);
+     color: rgb(0, 0, 0);
+     font-size: 24px;
+     cursor: pointer;
+ }
+ 
+ .c-player--control .skip-btn1{
+     background: none;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     color: white;
+     font-style: 18px;
+     position: relative;
+     right: 30px;
+   
+ }
+ 
+ .c-player--control .skip-btn2{
+     background: none;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     color: white;
+     font-style: 18px;
+     position: relative;
+     left: 30px;
+ }
